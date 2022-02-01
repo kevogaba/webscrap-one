@@ -26,6 +26,7 @@ jobs:
         pip install flake8 pytest
         pip install requests
         pip install BeautifulSoup4
+        pip install html5lib
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
