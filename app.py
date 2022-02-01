@@ -13,7 +13,8 @@ Summary = []
 
 '''Allow user to choose between dealer and private'''
 print(f'Choose between 1 for dealer and 2 for private \n')
-choice = input('>')
+choice = 2
+# choice = input('>')
 print(f'\n Scrapping... \n')
 
 '''The choice logic'''
