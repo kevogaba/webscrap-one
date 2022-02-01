@@ -1,4 +1,5 @@
 import csv
+import time
 import requests
 from bs4 import BeautifulSoup
 
@@ -25,8 +26,9 @@ elif choice == 2:
 else:
     url = base_url
 
-
-while True:
+'''Introduce timeout'''
+timeout = time.time() + 300 # Five minutes
+while time.time() < timeout:
     """
         Iterate over the url i.e. through the 'main url' 
         and those generated during pagination
